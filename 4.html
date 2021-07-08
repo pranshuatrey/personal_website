@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact_me</title>
+</head>
+<body>
+    <h1 style="background-color: coral; text-align: center;">REGISTRARION FORM</h1>
+    
+    
+    <form action="mailto:anshuatrey420@gamail.com" target="blank" method="post" enctype="text/plain"><br>
+<!--mailto is a Uniform Resource Identifier (URI) scheme for email addresses. It is used to produce hyperlinks
+     on websites that allow users to send an email to a specific address directly from an HTML document-->
+
+        <!--In action attribute we write destination where to transfer data given by user
+            when we click on submit button-->
+            
+            <!--Method attribute specifies how to tranfer form data to web server. It has
+            two ways get(default) and post.
+        GET sends the data as a part of url, means data is visible in url so never send 
+    secure information using get.
+Post does not show data in url and it sends data through http header which make data secure. --> 
+           
+            <!--Enctype is encoding type attribute, remember as we have specified encoding
+            system UTF 8 in head element similarly we are specifying here that our encoding 
+        type is plain text for this form. -->
+    
+        <label>Your name</label>    
+        <input type="text" name="your_name" value=""><br><BR>
+            <!--name is attribute where what u write is visible on redirected place.-->
+    
+    <label>Your Email</label>
+    <input type="email" name="your_email" value=""><br><br>
+    <textarea name="your message" rows="10" cols="20"></textarea><br><BR>
+    <!--textarea is where user can write in detail, developer will specify number of roows 
+    and columns which user can not exceed while writing.-->
+    
+    <input type="submit" value="submit">
+    <!--in value attribute what we write is visble on the subnit button.-->
+</form>
+</body>
+</html>
